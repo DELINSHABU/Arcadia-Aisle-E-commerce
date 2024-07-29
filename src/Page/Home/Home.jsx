@@ -2,8 +2,9 @@ import Banner from "./Banner"
 
 function Home() {
   return (
-    <div className="container">
+    <div>
         <Banner></Banner>
+       
     </div>
   )
 }
