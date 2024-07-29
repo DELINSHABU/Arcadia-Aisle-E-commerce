@@ -5,7 +5,7 @@ import Footer from "./Shared/Footer"
 function App() {
 
   return (
-    <div>
+    <div className="bg-gray-200">
       <Navbar></Navbar>
       <Outlet></Outlet>
       <Footer></Footer>
