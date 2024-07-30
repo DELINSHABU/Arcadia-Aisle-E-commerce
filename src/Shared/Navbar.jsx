@@ -1,13 +1,14 @@
 import { Link } from 'react-router-dom'
-import { MdShoppingCartCheckout } from "react-icons/md";
+import { MdShoppingCartCheckout, MdLogin } from "react-icons/md";
+
 
 function Navbar() {
   const navList =
     <>
-      <li className='hover:text-black hover:bg-white text-white rounded text-xl mx-2'><Link>Home</Link></li>
-      <li className='hover:text-black hover:bg-white text-white rounded text-xl mx-2'><Link>About</Link></li>
-      <li className='hover:text-black hover:bg-white text-white rounded text-xl mx-2'><Link>Shop</Link></li>
-      <li className='hover:text-black hover:bg-white text-white rounded text-xl mx-2'><Link>Contact</Link></li>
+      <li className='hover:text-black hover:bg-white text-white rounded ' ><Link>Home</Link></li>
+      <li className='hover:text-black hover:bg-white text-white rounded ml-1'><Link>About</Link></li>
+      <li className='hover:text-black hover:bg-white text-white rounded ml-1'><Link>Shop</Link></li>
+      <li className='hover:text-black hover:bg-white text-white rounded ml-1'><Link>Contact</Link></li>
 
     </>
   return (
@@ -40,11 +41,11 @@ function Navbar() {
               </ul>
             </div>
           </div>
-          <Link className="shadow-lg md:ml-0 ml-8 sx:ml-7 btn btn-ghost border-2 hover:border-white text-sm  md:text-xl text-white bg-gradient-to-r from-[#F26E00] to-[#F6A100] rounded-lg">Arcadia Aisle</Link>
+          <Link className="shadow-lg border-2 hover:border-white md:p-2   text-white lg:-ml-0 -ml-12 lg:w-[120px] w-[180px] px-1 bg-gradient-to-r from-[#F26E00] to-[#F6A100] rounded-lg">Arcadia Aisle</Link>
         </div>
         {/* Search bar */}
         <label className="mx-2">
-          <input type="text" className="px-3 md:py-3 py-1 rounded-xl md:w-72 md:px-4 w-24 text-black ml-8" placeholder="Search" />
+          <input type="text" className="px-2 md:py-2 py-1 rounded-xl md:w-72  w-24 text-black md:ml-8" placeholder="Search" />
         </label>
 
         {/* lg menu */}
@@ -57,16 +58,17 @@ function Navbar() {
 
         </div>
         <div className="navbar-end">
-          <div className='bg-black hover:bg-white md:px-5 md:mx-8 px-2 py-1 rounded mx-1'>
+          <div className='hover:text-black hover:bg-white  md:mx-5  px-2 rounded py-1'>
             <div className="indicator">
-              <span className="motion-safe:animate-spin indicator-item badge mr-2 -top-2">9+</span>
-              <button><MdShoppingCartCheckout className='text-2xl md:text-4xl indicator hover:text-[#F26E00] ' /></button>
+              <span className="motion-safe:animate-spin indicator-item badge mr-1 -top-2">9+</span>
+              <MdShoppingCartCheckout className='text-2xl md:text-2xl indicator hover:text-black ' />
+              <button >Cart</button>
             </div>
 
 
           </div>
 
-          <Link className="btn md:px-6  md:pt-0 text-xl font-serif px-3 hover:text-white hover:bg-black border-none">Login</Link>
+          <Link className="p-1 text-xl font-serif bg-white rounded text-black hover:text-white hover:bg-black border-none flex justify-center items-center gap-1 ml-2"><MdLogin />Login</Link>
         </div>
       </div>
 

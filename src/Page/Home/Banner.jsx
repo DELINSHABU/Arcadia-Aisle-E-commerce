@@ -5,13 +5,14 @@ import 'swiper/css/pagination';
 import { Autoplay, Pagination, Navigation, EffectCoverflow, EffectFade } from 'swiper/modules';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import img1 from "/img1.jpg"
-import img2 from "/img2.jpg"
+import CountdownTimer from './CountdownTimer';
 
 function Banner() {
+    const targetDate = new Date();
+    targetDate.setDate(targetDate.getDate() + 154);
     useEffect(() => {
         AOS.init()
     }, [])
@@ -20,6 +21,7 @@ function Banner() {
             <div className=' py-10'>
                 <Swiper
                     spaceBetween={30}
+                    loop={true}
                     autoplay={{
                         delay: 3500,
                         disableOnInteraction: false,
@@ -39,61 +41,69 @@ function Banner() {
                         modifier: 1,
                         slideShadows: true,
                     }}
-
-
                     modules={[Autoplay, EffectCoverflow, Pagination, Navigation, EffectFade]}
                     className="mySwiper"
 
                 >
                     <SwiperSlide>
+                        <div className=' relative mx-auto w-[90%] bg-black'>
+                            <div className=' absolute top-[20px] md:top-[50px] right-0   text-white px-5 z-10'>
+                                <h1 className='text-2xl md:text-3xl lg:text-5xl font-bold font-serif '>Our Best <span className='text-[#F26E00]'>Luxury</span><br /> Watch Collection <br /> For You</h1>
+                                <p className='py-5 text-lg mx-auto'>you can adjust  and personality this names <br /> to match brand and style</p>
+                                <button className='btn md:w-72 bg-white text-black  lg:mx-16 ml-auto flex justify-center w-fit '>SHOP NOW</button>
+                            </div>
 
-                        <div
-
-
-                        >
-                            <h1 className='text-2xl text-black font-bold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, corrupti!</h1>
-                            <img data-aos="fade-up"
-                                data-aos-anchor-placement="center-center"
-                                data-aos-duration="1000" className='w-[80%] object-cover object-left-top mx-auto h-96 ' src={img1} />
-
+                            <img className='h-96 w-[100%]  mx-auto object-cover opacity-50  rounded-2xl' src='https://i.ibb.co/NxX0gFp/img5.jpg' />
 
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div
+                        <div className=' relative mx-auto w-[90%] bg-black rounded-2xl'>
+                            <div className=' absolute top-[30px] md:top-[80px]  lg:left-10  text-white px-5 z-10'>
+                                <h1 className='text-2xl md:text-5xl font-bold font-serif'>I am Growing</h1>
+                                <p className='py-5 text-lg mr-12 md:mr-0'>Embrace each new day's journey in comfort and confidence.</p>
+                                <button className='btn lg::w-72 bg-white text-black my-1 md:my-4   lg:mx-16 ml-auto lg:flex lg:justify-around w-fit '>SHOP NOW</button>
+                            </div>
 
+                            <img className='h-72 md:h-96 w-[100%]  mx-auto object-fill  opacity-50  rounded-2xl' src="https://i.ibb.co/Kqtpfzb/img7.jpg" />
+                        </div>
 
-                        >
-                            <h1 className='text-2xl text-black font-bold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, corrupti!</h1>
-                            <img data-aos="fade-up"
-                                data-aos-anchor-placement="center-center"
-                                data-aos-duration="1000" className='w-[80%] object-cover  mx-auto h-96 ' src="	https://woodmart.b-cdn.net/wp-content/uploads/2018/09/camping-slider-img-s2-1.png.webp" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className=' relative mx-auto w-[90%] bg-black rounded-2xl'>
+                            <div className=' absolute top-1/3 md:top-[50px] right-4   text-white px-5 z-10'>
+                                <h1 className='text-2xl md:text-4xl lg:text-5xl font-bold font-serif '>FASHION <br /><span className=' text-[#F26E00] text-2xl md:text-5xl lg::text-7xl'>BIG SALE</span><br /> <span className='md:text-3xl lg:text-4xl'>THIS WEEKEND</span></h1>
+
+                                <div className='grid md:flex md:justify-between md:items-center md:gap-2 py-5'>
+                                    <button className='btn mb-2 md:mb-0  bg-white text-black  md:ml-auto  w-fit '>SHOP NOW</button>
+                                    <button className='btn  bg-white text-black  md:ml-auto  w-fit hidden md:block '>VEIW DETAILS</button>
+                                </div>
+                            </div>
+
+                            <img className='h-96 w-[100%]  mx-auto object-right-top  opacity-50 rounded-2xl' src="https://i.ibb.co/qghDLmQ/img4.jpg" />
+                        </div>
+
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className=' relative mx-auto w-[90%] '>
+                            <div className=' absolute top-1/3 md:top-[100px] right-0   text-white px-5 z-10'>
+                                <h1 className='text-3xl md:text-4xl lg::text-5xl font-bold font-serif '>
+                                    Aurora Headset
+                                </h1>
+
+                                <div className='my-10'>
+                                    <CountdownTimer targetDate={targetDate} />
+                                </div>
+                                <button className='btn lg::w-72 bg-white text-black  md:mx-16 ml-auto lg:flex lg:justify-center w-fit '>BUY NOW</button>
+                            </div>
+
+                            <img className='h-96 w-[100%]  mx-auto object-fill object-left-top bg-opacity-50 rounded-2xl' src="https://i.ibb.co/JC6Dj6m/img3.jpg" />
                         </div>
                     </SwiperSlide>
-                    <SwiperSlide>
-                        <img className='w-[80%] object-cover object-left-top mx-auto h-96 ' src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img className='w-[80%] object-cover object-left-top mx-auto h-96 ' src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img className='w-[80%] object-cover object-left-top mx-auto h-96 ' src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img className='w-[80%] object-cover object-left-top mx-auto h-96 ' src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img className='w-[80%] object-cover object-left-top mx-auto h-96 ' src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img className='w-[80%] object-cover object-left-top mx-auto h-96 ' src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img className='w-[80%] object-cover object-left-top mx-auto h-96 ' src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                    </SwiperSlide>
+
                 </Swiper>
             </div>
-        </div>
+        </div >
 
 
 
