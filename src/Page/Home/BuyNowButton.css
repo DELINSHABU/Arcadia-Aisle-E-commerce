@@ -1,0 +1,25 @@
+.buy-now-button {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .buy-now-text {
+    transition: opacity 0.3s;
+  }
+  
+  .cart-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .buy-now-button:hover .buy-now-text {
+    opacity: 0;
+  }
+  
+  .buy-now-button:hover .cart-icon {
+    opacity: 1;
+  }

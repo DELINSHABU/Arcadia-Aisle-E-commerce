@@ -17,8 +17,8 @@ function Banner() {
         AOS.init()
     }, [])
     return (
-        <div>
-            <div className=' py-10'>
+        <div className='container mx-auto'>
+            <div className='py-10'>
                 <Swiper
                     spaceBetween={30}
                     loop={true}
@@ -46,7 +46,7 @@ function Banner() {
 
                 >
                     <SwiperSlide>
-                        <div className=' relative mx-auto w-[90%] bg-black'>
+                        <div className=' relative mx-auto w-[100%] bg-black rounded-2xl'>
                             <div className=' absolute top-[20px] md:top-[50px] right-0   text-white px-5 z-10'>
                                 <h1 className='text-2xl md:text-3xl lg:text-5xl font-bold font-serif '>Our Best <span className='text-[#F26E00]'>Luxury</span><br /> Watch Collection <br /> For You</h1>
                                 <p className='py-5 text-lg mx-auto'>you can adjust  and personality this names <br /> to match brand and style</p>
@@ -58,7 +58,7 @@ function Banner() {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className=' relative mx-auto w-[90%] bg-black rounded-2xl'>
+                        <div className=' relative mx-auto w-[100%] bg-black rounded-2xl'>
                             <div className=' absolute top-[30px] md:top-[80px]  lg:left-10  text-white px-5 z-10'>
                                 <h1 className='text-2xl md:text-5xl font-bold font-serif'>I am Growing</h1>
                                 <p className='py-5 text-lg mr-12 md:mr-0'>Embrace each new day's journey in comfort and confidence.</p>
@@ -70,7 +70,7 @@ function Banner() {
 
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className=' relative mx-auto w-[90%] bg-black rounded-2xl'>
+                        <div className=' relative mx-auto w-[100%] bg-black rounded-2xl'>
                             <div className=' absolute top-1/3 md:top-[50px] right-4   text-white px-5 z-10'>
                                 <h1 className='text-2xl md:text-4xl lg:text-5xl font-bold font-serif '>FASHION <br /><span className=' text-[#F26E00] text-2xl md:text-5xl lg::text-7xl'>BIG SALE</span><br /> <span className='md:text-3xl lg:text-4xl'>THIS WEEKEND</span></h1>
 
@@ -85,7 +85,7 @@ function Banner() {
 
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className=' relative mx-auto w-[90%] '>
+                        <div className=' relative mx-auto w-[100%] '>
                             <div className=' absolute top-1/3 md:top-[100px] right-0   text-white px-5 z-10'>
                                 <h1 className='text-3xl md:text-4xl lg::text-5xl font-bold font-serif '>
                                     Aurora Headset
