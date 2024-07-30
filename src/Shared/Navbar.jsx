@@ -55,13 +55,12 @@ function Navbar() {
           </ul>
         </div>
         <div>
-
         </div>
         <div className="navbar-end">
-          <div className='hover:text-black hover:bg-white  md:mx-5  px-2 rounded py-1'>
+          <div className='hover:text-black  hover:bg-white  md:mx-5  px-2 rounded py-1'>
             <div className="indicator">
               <span className="motion-safe:animate-spin indicator-item badge mr-1 -top-2">9+</span>
-              <MdShoppingCartCheckout className='text-2xl md:text-2xl indicator hover:text-black ' />
+              <MdShoppingCartCheckout className='text-2xl md:text-2xl hover:text-black ' />
               <button >Cart</button>
             </div>
 

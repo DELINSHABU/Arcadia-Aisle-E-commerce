@@ -1,4 +1,5 @@
 import Banner from "./Banner"
+import PopularCategories from "./PopularCategories"
 import PopularItems from "./PopularItems"
 
 function Home() {
@@ -6,6 +7,7 @@ function Home() {
     <div className=" bg-orange-100">
       <Banner></Banner>
       <PopularItems></PopularItems>
+      <PopularCategories></PopularCategories>
     </div>
   )
 }
