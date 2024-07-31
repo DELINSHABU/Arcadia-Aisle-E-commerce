@@ -1,0 +1,32 @@
+[
+  {
+    "name": "iPad Mini",
+    "image": "https://i.ibb.co/8P5qgmJ/ipad.jpg",
+    "price": "$600.00",
+    "rating": 5
+  },
+  {
+    "name": "Apple Watch",
+    "image": "https://i.ibb.co/4TfRJMs/watch.jpg",
+    "price": "$799.00",
+    "rating": 5
+  },
+  {
+    "name": "Apple",
+    "image": "https://i.ibb.co/T2xPjqf/apple-lap.jpg",
+    "price": "$999.00",
+    "rating": 5
+  },
+  {
+    "name": "Apple iPhone",
+    "image": "https://i.ibb.co/tLypMd7/apple-phn.jpg",
+    "price": "$799.00",
+    "rating": 5
+  },
+  {
+    "name": "Apple iMac",
+    "image": "https://i.ibb.co/Wtnk7X3/apple-mac.jpg",
+    "price": "$1,299.00",
+    "rating": 5
+  }
+]

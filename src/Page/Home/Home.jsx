@@ -3,6 +3,7 @@ import Banner from "./Banner"
 import FAQSection from "./FAQSection"
 import PopularCategories from "./PopularCategories"
 import PopularItems from "./PopularItems"
+import ShoppingEvent from "./ShoppingEvent"
 
 function Home() {
   return (
@@ -11,7 +12,9 @@ function Home() {
       <PopularItems></PopularItems>
       <PopularCategories></PopularCategories>
       <Articles></Articles>
+      <ShoppingEvent></ShoppingEvent>
       <FAQSection></FAQSection>
+    
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import  { useEffect, useState } from 'react';
 
+// eslint-disable-next-line react/prop-types
 const CountdownTimer = ({ targetDate }) => {
   const calculateTimeLeft = () => {
     const difference = +new Date(targetDate) - +new Date();

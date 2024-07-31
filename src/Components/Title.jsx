@@ -1,3 +1,4 @@
+// eslint-disable-next-line react/prop-types
 function Title({ name }) {
     return (
         <div className="container mx-auto">
