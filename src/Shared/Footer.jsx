@@ -8,8 +8,10 @@ function Footer() {
     <footer className="bg-white  py-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-between">
-          <div className="w-full md:w-1/4 mb-4">
-            <Link className="shadow-lg border-2 hover:border-white  text-white right-0 w-full p-2 bg-gradient-to-r from-[#F26E00] to-[#F6A100] rounded-lg">Arcadia Aisle</Link>
+          <div className="w-full md:w-1/4 mb-10">
+            <div className="mb-6">
+              <Link className="shadow-lg border-2 hover:border-white  text-white right-0 w-full p-2 bg-gradient-to-r from-[#F26E00] to-[#F6A100] rounded-lg ">Arcadia Aisle</Link>
+            </div>
             <p className="text-gray-600 text-lg mt-2">
               Condimentum adipiscing vel neque dis nam parturient orci at scelerisque.
             </p>
@@ -56,7 +58,7 @@ function Footer() {
           </div>
         </div>
         <div className="flex justify-center items-center mt-8 border-t pt-4">
-          <p className="text-gray-600">Aradia Aisle © 2024 CREATED BY MD HABIBUR RAHMAN. PREMIUM E-COMMERCE SOLUTIONS.</p>
+          <p className="text-gray-600">ARCADIA AISLE © 2024 CREATED BY MD HABIBUR RAHMAN. PREMIUM E-COMMERCE SOLUTIONS.</p>
         </div>
       </div>
     </footer>

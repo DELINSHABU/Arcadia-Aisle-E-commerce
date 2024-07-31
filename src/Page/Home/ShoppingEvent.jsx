@@ -19,8 +19,8 @@ function ShoppingEvent() {
                         <img src="https://i.ibb.co/KF2ym6S/apple.png" alt="" />
                     </div>
                     <div>
-                        <h2 className="text-4xl font-bold mb-4">Apple Shopping Event</h2>
-                        <p className="text-lg mb-6">Hurry and get discounts on all Apple devices up to 20%</p>
+                        <h2 className="text-4xl md:text-6xl font-bold mb-4">Apple Shopping Event</h2>
+                        <p className="text-lg md:text-2xl mb-6">Hurry and get discounts on all Apple devices up to 20%</p>
                         <div className="flex mb-6 space-x-4">
                             <CountdownTimer targetDate={targetDate} />
                         </div>
