@@ -15,10 +15,10 @@ function PopularItems() {
         <div className='container mx-auto'>
             <Title name={"Popular Items"}></Title>
 
-            <div className='relative grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 mx-2 py-10'>
+            <div className='relative grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mx-2  py-10'>
                 {
                     items?.slice(0, 5).map((item) =>
-                        <div key={item?.id} className="card relative  bg-base-100 shadow-xl py-5  hover:scale-110 transform-gpu transition-transform duration-300 translate-x-6  ">
+                        <div key={item?.id} className="card relative bg-base-100 shadow-xl py-5  hover:scale-110 transform-gpu transition-transform duration-300  ">
                             <div className='indicator -right-[84%] '>
                                 <div className="indicator-item absolute bg-orange-500 text-xs text-white font-bold p-1  transform rounded-tl-full rounded-bl-full">
                                     {item?.badge}

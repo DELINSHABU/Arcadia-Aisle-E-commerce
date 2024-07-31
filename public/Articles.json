@@ -1,0 +1,30 @@
+[
+  {
+    "image": "https://i.ibb.co/9Y5NLm5/laptop1.jpg",
+    "category": "Gaming, Laptops",
+    "date": "14 Nov 2022",
+    "title": "Best Gaming Laptop Models",
+    "description": "At solmen va esser necessari far uniform grammatica, pronunciation e plu sommun paroles..."
+  },
+  {
+    "image": "https://i.ibb.co/XsKTK52/spiker.jpg",
+    "category": "Hi-Fi, Sound",
+    "date": "14 Nov 2022",
+    "title": "How to choose a HI-FI stereo system",
+    "description": "Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum..."
+  },
+  {
+    "image": "https://i.ibb.co/1f7VC7s/logicKey.jpg",
+    "category": "Keyboards",
+    "date": "11 Nov 2022",
+    "title": "Logitech POP Keys",
+    "description": "Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus..."
+  },
+  {
+    "image": "https://i.ibb.co/L9vJkVq/camera.jpg",
+    "category": "Cameras",
+    "date": "11 Nov 2022",
+    "title": "Cameras for Street Photography",
+    "description": "At solmen va esser necessari far uniform grammatica, pronunciation e plu sommun paroles..."
+  }
+]

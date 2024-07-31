@@ -5,7 +5,8 @@
     "image": "https://i.ibb.co/mXfwFhr/samsung-neo-qled-55qn85a-1.jpg",
     "price": 25.99,
     "offer_price": 19.99,
-    "badge": "Bext Sale!"
+    "badge": "Bext Sale!",
+    "brand": "Samsung"
   },
   {
     "id": "2",

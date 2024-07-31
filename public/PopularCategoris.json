@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/LSRZgYv/apple-iphone-13-pink-2.jpg",
+    "title": "Apple iPhone",
+    "productItem": "8"
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/DLvvyfj/apple-macbook-pro-16-space-gray-2.jpg",
+    "title": "Apple MacBook",
+    "productItem": "7"
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/QF22VJT/asus-pro-ws-x570-2.jpg",
+    "title": "Motherboards",
+    "productItem": "5"
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/hKzdpzL/fujifilm-x-t3-kit-2.jpg",
+    "title": "ARIETE 986",
+    "productItem": "3"
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/KwRvZj4/bose-quietcomfort-45-2.jpg",
+    "title": "Headsets",
+    "productItem": "5"
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/hLzK9YW/autel-evo-nano-2.jpg",
+    "title": "Drones",
+    "productItem": "9"
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co/BT1GmF0/apple-ipad-mini-starlight-2.jpg",
+    "title": "Apple Ipad",
+    "productItem": "8"
+  }
+]

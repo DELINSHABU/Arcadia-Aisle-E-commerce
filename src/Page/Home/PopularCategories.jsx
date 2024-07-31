@@ -1,10 +1,34 @@
-import React from 'react'
+import { useEffect, useState } from 'react'
 import Title from '../../Components/Title'
 
 function PopularCategories() {
+    const [items, setItems] = useState([])
+    useEffect(() => {
+        fetch("/PopularCategoris.json")
+            .then(data => data.json())
+            .then(data => setItems(data))
+    }, [])
     return (
-        <div>
+        <div className='container mx-auto'>
             <Title name={"Popular Categories"}></Title>
+            <div className='py-10'>
+                <div className='grid grid-cols-2 md:grid-cols-3  lg:grid-cols-7 gap-4 mx-2 '>
+                    {
+                        items?.map(item => <div key={item?.id} className=" bg-white shadow-lg rounded-lg overflow-hidden">
+                            <img
+                                className="w-44 h-48 object-cover hover:scale-110  duration-300  "
+                                src={item?.image}
+                                alt={item?.title}
+                            />
+                            <div className="p-4">
+                                <h2 className="text-lg font-semibold text-gray-800">{item?.title}</h2>
+                                <p className="text-gray-600">{item?.productItem} products</p>
+                            </div>
+                        </div>)
+                    }
+                </div>
+            </div>
+
         </div>)
 }
 
