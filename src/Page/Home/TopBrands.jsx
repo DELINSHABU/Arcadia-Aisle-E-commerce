@@ -6,7 +6,7 @@ function TopBrands() {
             <div className="flex justify-center items-center py-5">
                 <h2 className="text-2xl md:text-4xl font-serif uppercase py-5">Top Brands Products</h2>
             </div>
-            <div className="flex flex-wrap justify-center items-center gap-5 mx-auto">
+            <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-8 justify-center items-center gap-4 mx-2">
                 {topBrands?.map(item => <div key={item?.id}>
                     <img className="w-32 h-36 rounded-lg object-fill " src={item?.image} alt="" />
                 </div>)}
