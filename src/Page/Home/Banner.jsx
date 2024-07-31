@@ -5,7 +5,7 @@ import 'swiper/css/pagination';
 import { Autoplay, Pagination, Navigation, EffectCoverflow, EffectFade } from 'swiper/modules';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
-import { useEffect, useState } from 'react';
+import { useEffect, } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import CountdownTimer from './CountdownTimer';
