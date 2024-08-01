@@ -1,15 +1,81 @@
 import { Link } from 'react-router-dom'
 import { MdShoppingCartCheckout, MdLogin } from "react-icons/md";
+import { useEffect, useState } from 'react';
 
 
 function Navbar() {
+  const [cartItemCount, setCartItemCount] = useState(0);
+
+  useEffect(() => {
+    const getCartItemsCount = () => {
+      const items = localStorage.getItem('cart');
+      const data = items ? JSON.parse(items) : [];
+      // Sum up the quantities of all items in the cart
+      const count = data.reduce((total, item) => total + item.quantity, 0);
+      setCartItemCount(count);
+    };
+
+    getCartItemsCount();
+
+    const handleStorageChange = (event) => {
+      if (event.storageArea === localStorage && event.key === 'cart') {
+        getCartItemsCount();
+      }
+    };
+
+    window.addEventListener('storage', handleStorageChange);
+
+    return () => {
+      window.removeEventListener('storage', handleStorageChange);
+    };
+  }, []); 
   const navList =
     <>
-      <li className='hover:text-black  text-white rounded  ' ><Link>Home</Link></li>
-      <li className='hover:text-black  text-white rounded  ' ><Link>Fashion & Clothing</Link></li>
-      <li className='hover:text-black  text-white rounded '><Link>Electronic Accessories</Link></li>
-      <li className='hover:text-black  text-white rounded '><Link>Health & Beauty</Link></li>
-      <li className='hover:text-black  text-white rounded '><Link>Cars & MotorBikes</Link></li>
+      <li className='hover:text-black  text-white rounded ' ><Link>Home</Link></li>
+      <li className="dropdown dropdown-hover z-50 ">
+        <div tabIndex={0} role="button" className='hover:text-black  text-white rounded '>Fashion & Clothing</div>
+        <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 shadow ">
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>Shirt</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>T-Shirt</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>Sari</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>Kurta</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>Pant</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>Shoes</Link></li>
+        </ul>
+
+      </li>
+      <li className="dropdown dropdown-hover z-50 ">
+        <div tabIndex={0} role="button" className='hover:text-black  text-white rounded ' >Electronic Accessories</div>
+        <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 shadow ">
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>Apple MacBook</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>Business Laptop</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>Gaming Laptop</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>Ultrabook</Link></li>
+        </ul>
+
+      </li>
+      <li className="dropdown dropdown-hover z-50 ">
+        <div tabIndex={0} role="button" className='hover:text-black  text-white rounded ' >Health & Beauty</div>
+        <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 shadow ">
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>Hair Care</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>Skin Care</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>Man Care</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>Woman Care</Link></li>
+        </ul>
+
+      </li>
+      <li className="dropdown dropdown-hover z-50 ">
+        <div tabIndex={0} role="button" className='hover:text-black  text-white rounded ' >Cars & MotorBikes</div>
+        <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 shadow ">
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>Cars</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>MotorBikes</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link> Cars Parts</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>MotorBikes Parts</Link></li>
+        </ul>
+
+      </li>
+
+
 
     </>
   return (
@@ -37,16 +103,16 @@ function Navbar() {
               </div>
               <div className="drawer-side">
                 <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
-                <ul className="menu bg-gradient-to-r from-[#F26E00] to-[#F6A100] text-base-content min-h-full w-56 p-4">
+                <ul className="menu bg-gradient-to-r from-[#F26E00] to-[#F6A100] text-base-content min-h-full w-56 px-4 ">
                   {navList}
                 </ul>
               </div>
             </div>
-            <Link className="shadow-lg border-2 hover:border-white md:p-2   text-white lg:-ml-0 md:-ml-12 lg:w-[120px] w-[180px] px-1 bg-gradient-to-r from-[#F26E00] to-[#F6A100] rounded-lg">Arcadia Aisle</Link>
+            <Link className="shadow-lg border-2 hover:border-white md:p-2  text-white  lg:-ml-0 md:-ml-12 lg:w-[120px] w-[150px] px-1 bg-gradient-to-r from-[#F26E00] to-[#F6A100] ml-0 rounded-lg">Arcadia Aisle</Link>
           </div>
           {/* Search bar */}
           <label className="md:mx-2">
-            <input type="text" className="px-2  py-1 rounded-xl md:w-72  w-24 text-black ml-2 md:ml-8 lg:ml-0" placeholder="Search" />
+            <input type="text" className="px-2  py-1 rounded-xl md:w-72  w-24 text-black ml-1 md:ml-8 lg:ml-0" placeholder="Search" />
           </label>
           {/* lg menu */}
           <div className="navbar-center hidden lg:flex">
@@ -57,13 +123,17 @@ function Navbar() {
           <div>
           </div>
           <div className="navbar-end">
-            <div className='hover:text-black transition hover:bg-white lg:mx-0 md:mx-5  px-2 rounded py-1'>
-              <div className="indicator">
-                <span className=" indicator-item badge  -top-1">9+</span>
-                <MdShoppingCartCheckout className='text-xl  hover:text-black ' />
-                <button >Cart</button>
+            <Link to="/cart">
+              <div className='hover:text-black transition hover:bg-white lg:mx-0 md:mx-5 px-2 rounded py-1'>
+                <div className="indicator">
+                  {cartItemCount > 0 && (
+                    <span className="indicator-item badge -top-1">{cartItemCount}</span>
+                  )}
+                  <MdShoppingCartCheckout className='text-xl hover:text-black' />
+                  <button>Cart</button>
+                </div>
               </div>
-            </div>
+            </Link>
             <Link className="px-1 text-xl font-serif bg-white rounded text-black hover:text-white hover:bg-black border-none flex justify-center items-center gap-1 ml-2"><MdLogin />Login</Link>
           </div>
         </div>

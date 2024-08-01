@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { MdShoppingCartCheckout, MdFavorite, MdShare, MdCompareArrows } from 'react-icons/md';
 import "./BuyNowButton.css"
 import Aos from 'aos';
+import { Link } from 'react-router-dom';
 
 function PopularItems() {
     const [items, setItems] = useState([])
@@ -22,13 +23,13 @@ function PopularItems() {
 
                 <div className='relative grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mx-2  py-10'>
                     {
-                        items?.slice(0, 5).map((item,idx) =>
+                        items?.slice(0, 5).map((item, idx) =>
                             <div
                                 data-aos="fade-right"
                                 data-aos-offset="300"
-                                 data-aos-delay={idx * 250}
+                                data-aos-delay={idx * 250}
                                 data-aos-easing="ease-in-sine"
-                               
+
                                 key={item?.id}>
                                 <div
                                     className="card relative  bg-base-100 shadow-xl pt-3 pb-2  hover:scale-110 transform-gpu transition-transform duration-300  ">
@@ -57,13 +58,19 @@ function PopularItems() {
                                             <p className=''>${item?.offer_price}</p>
                                         </div>
                                     </div>
-                                    <button className="buy-now-button relative bg-orange-500 text-white py-2 mx-4 text-lg rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:ring-opacity-75">
+
+                                    <Link to={`viewsDetails/${item?.id}`} className="buy-now-button relative text-center bg-orange-500 text-white py-2 mx-4 text-lg rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:ring-opacity-75">
+
+
                                         <span className="buy-now-text">BUY NOW</span>
                                         <i className="fas fa-shopping-cart cart-icon">
                                             <MdShoppingCartCheckout className='text-2xl' />
                                         </i>
 
-                                    </button>
+
+                                    </Link>
+
+
 
 
                                 </div>

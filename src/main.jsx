@@ -7,6 +7,8 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import Home from './Page/Home/Home.jsx';
+import ViewDetails from './Components/ViewDetails.jsx';
+import Cart from './Components/Cart.jsx';
 
 const router = createBrowserRouter([
   {
@@ -16,6 +18,18 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>
+      },
+      {
+        path: "/viewsDetails/:id",
+        element: <ViewDetails></ViewDetails>,
+        loader: async ({ params }) => {
+          const response = await fetch(`/PopularItem.json`);
+          const data = await response.json();
+          return data.find(item => item.id === params.id);
+        }
+      }, {
+        path: "/cart",
+        element: <Cart></Cart>
       }
     ]
   },

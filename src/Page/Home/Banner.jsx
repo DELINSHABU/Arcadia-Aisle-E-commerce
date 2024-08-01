@@ -9,6 +9,9 @@ import { useEffect, } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import CountdownTimer from './CountdownTimer';
+import Homebanner from "../../../public/Homebanner.json"
+import Homebanner1 from "../../../public/Homebanner1.json"
+import Lottie from 'lottie-react';
 
 function Banner() {
     const targetDate = new Date();
@@ -55,6 +58,7 @@ function Banner() {
 
                             <img className='h-96 w-[100%]  mx-auto object-cover opacity-50  rounded-2xl' src='https://i.ibb.co/NxX0gFp/img5.jpg' />
 
+
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
@@ -70,17 +74,20 @@ function Banner() {
 
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className=' relative mx-auto w-[100%] bg-black rounded-2xl'>
-                            <div className=' absolute top-1/3 md:top-[50px] right-4   text-white px-5 z-10'>
+                        <div className=' relative mx-auto w-[100%] bg-white rounded-2xl'>
+                            <div className=' absolute top-1/3 md:top-[50px] left-[38%]   text-b px-5 z-10'>
                                 <h1 className='text-2xl md:text-4xl lg:text-5xl font-bold font-serif '>FASHION <br /><span className=' text-[#F26E00] text-2xl md:text-5xl lg::text-7xl'>BIG SALE</span><br /> <span className='md:text-3xl lg:text-4xl'>THIS WEEKEND</span></h1>
 
                                 <div className='grid md:flex md:justify-between md:items-center md:gap-2 py-5'>
-                                    <button className='btn mb-2 md:mb-0  bg-white text-black  md:ml-auto  w-fit '>SHOP NOW</button>
-                                    <button className='btn  bg-white text-black  md:ml-auto  w-fit hidden md:block '>VEIW DETAILS</button>
+                                    <button className='btn mb-2 md:mb-0  bg-white text-black border-2 border-orange-500 md:ml-auto  w-fit '>SHOP NOW</button>
+                                    <button className='btn  bg-white text-black border-2 border-orange-500  md:ml-auto  w-fit hidden md:block '>VEIW DETAILS</button>
                                 </div>
                             </div>
-
-                            <img className='h-96 w-[100%]  mx-auto object-right-top  opacity-50 rounded-2xl' src="https://i.ibb.co/qghDLmQ/img4.jpg" />
+                            <div className='flex-1 md:flex  gap-5'>
+                                <Lottie className='h-96 w-[100%]  mx-auto object-cover bg-white  rounded-2xl' animationData={Homebanner}></Lottie>
+                                <Lottie className='h-96 w-[100%]  mx-auto object-cover bg-white  rounded-2xl' animationData={Homebanner1}></Lottie>
+                            </div>
+                            {/* <img className='h-96 w-[100%]  mx-auto object-right-top  opacity-50 rounded-2xl' src="https://i.ibb.co/qghDLmQ/img4.jpg" /> */}
                         </div>
 
                     </SwiperSlide>
