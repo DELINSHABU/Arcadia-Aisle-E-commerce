@@ -18,8 +18,8 @@ function ShoppingEvent() {
                     <div>
                         <img src="https://i.ibb.co/KF2ym6S/apple.png" alt="" />
                     </div>
-                    <div>
-                        <h2 className="text-4xl md:text-6xl font-bold mb-4">Apple Shopping Event</h2>
+                    <div className="text-center md:text-start items-center  mx-3 md:mx-0">
+                        <h2 className="text-4xl  md:text-6xl font-bold mb-4">Apple Shopping Event</h2>
                         <p className="text-lg md:text-2xl mb-6">Hurry and get discounts on all Apple devices up to 20%</p>
                         <div className="flex mb-6 space-x-4">
                             <CountdownTimer targetDate={targetDate} />
@@ -29,7 +29,7 @@ function ShoppingEvent() {
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 justify-center gap-4 mx-2">
                     {items.map((product, index) => (
-                        <div key={index} className="bg-white p-2  rounded-md shadow-md text-center flex justify-center items-center">
+                        <div key={index} className="bg-white p-2 hover:scale-110 transform-gpu transition-transform duration-300   rounded-md shadow-md text-center flex justify-center items-center">
                             <div className="mb-2">
                                 <img src={product?.image} alt={product?.name} className="h-24 mx-auto" />
                             </div>
