@@ -83,9 +83,9 @@ function Banner() {
                                     <button className='btn  bg-white text-black border-2 border-orange-500  md:ml-auto  w-fit hidden md:block '>VEIW DETAILS</button>
                                 </div>
                             </div>
-                            <div className='flex-1 md:flex  gap-5'>
-                                <Lottie className='h-96 w-[100%]  mx-auto object-cover bg-white  rounded-2xl' animationData={Homebanner}></Lottie>
-                                <Lottie className='h-96 w-[100%]  mx-auto object-cover bg-white  rounded-2xl' animationData={Homebanner1}></Lottie>
+                            <div className='grid grid-cols-1 md:grid-cols-2  gap-5'>
+                                <Lottie className='h-72 md:h-96 lg:w-[100%]  mx-auto object-cover bg-white  rounded-2xl' animationData={Homebanner}></Lottie>
+                                <Lottie className='h-96 hidden md:block lg:w-[100%]  mx-auto object-cover bg-white  rounded-2xl' animationData={Homebanner1}></Lottie>
                             </div>
                             {/* <img className='h-96 w-[100%]  mx-auto object-right-top  opacity-50 rounded-2xl' src="https://i.ibb.co/qghDLmQ/img4.jpg" /> */}
                         </div>

@@ -9,6 +9,8 @@ import "./index.css";
 import Home from './Page/Home/Home.jsx';
 import ViewDetails from './Components/ViewDetails.jsx';
 import Cart from './Components/Cart.jsx';
+import AllProducts from './Page/AllProducts/AllProducts.jsx';
+
 
 const router = createBrowserRouter([
   {
@@ -20,16 +22,22 @@ const router = createBrowserRouter([
         element: <Home></Home>
       },
       {
-        path: "/viewsDetails/:id",
+        path: "/viewDetails/:id",
         element: <ViewDetails></ViewDetails>,
         loader: async ({ params }) => {
-          const response = await fetch(`/PopularItem.json`);
+          const response = await fetch(`/AllProducts.json`);
           const data = await response.json();
-          return data.find(item => item.id === params.id);
+          return  data.find(item => item.id == params.id);
         }
-      }, {
+      },
+      {
         path: "/cart",
         element: <Cart></Cart>
+      }
+      ,
+      {
+        path: "/allProducts",
+        element: <AllProducts></AllProducts>
       }
     ]
   },

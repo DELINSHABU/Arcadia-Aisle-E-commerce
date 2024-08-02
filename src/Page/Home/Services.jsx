@@ -1,11 +1,11 @@
 import Lottie from "lottie-react"
 import Title from "../../Components/Title"
-import ReturnPolicy from "../../../public/ReturnPolicy.json"
-import CashOnDelivary from "../../../public/CashOnDelivery.json"
-import Delivery from "../../../public/Delivery.json"
-import LowCost from "../../../public/LowCost.json"
-import BestQuality from "../../../public/BestQuality.json"
-import BestShopping from "../../../public/BestShopping.json"
+import ReturnPolicy from "/public/ReturnPolicy.json"
+import CashOnDelivary from "/public/CashOnDelivery.json"
+import Delivery from "/public/Delivery.json"
+import LowCost from "/public/LowCost.json"
+import BestQuality from "/public/BestQuality.json"
+import BestShopping from "/public/BestShopping.json"
 
 function Services() {
     return (

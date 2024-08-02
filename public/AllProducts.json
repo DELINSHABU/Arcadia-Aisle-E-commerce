@@ -1,0 +1,341 @@
+[
+  {
+    "id": 1,
+    "name": "Apple iPhone 14",
+    "description": "Latest iPhone model with A15 Bionic chip",
+    "price": 117000,
+    "currency": "TK",
+    "category": "Smartphones",
+    "brand": "Apple",
+    "rating": 4.8,
+    "stock": 25,
+    "badge": "New",
+    "imageUrl": [
+      "https://i.ibb.co/pKsYndy/apple14.jpg",
+      "https://i.ibb.co/WGsNCfr/apple141.jpg",
+      "https://i.ibb.co/pQ0h0JN/download-13.jpg",
+      "https://i.ibb.co/H45QF6R/download-14.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Men's Premium Varsity Jacket",
+    "offer_price": 39.99,
+    "description": "Men's Premium Varsity Jacket Men's Premium Varsity Jacket",
+    "price": 105000,
+    "currency": "TK",
+    "category": "T-Shirt",
+    "brand": "Arong",
+    "rating": 4.7,
+    "stock": 30,
+    "badge": "Best Seller",
+    "imageUrl": [
+      "https://i.ibb.co/sbQJzcQ/versity-jacket-300x300.jpg",
+      "https://i.ibb.co/LnhW0nN/je.jpg",
+      "https://i.ibb.co/vv96NxM/download-15.jpg",
+      "https://i.ibb.co/TRdm8cQ/download-16.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "OnePlus 9 Pro",
+    "description": "High-end smartphone with Snapdragon 888",
+    "price": 95000,
+    "currency": "TK",
+    "category": "Smartphones",
+    "brand": "OnePlus",
+    "rating": 4.6,
+    "stock": 20,
+    "badge": "Limited Stock",
+    "imageUrl": [
+      "https://i.ibb.co/rHDPCSB/download-17.jpg",
+      "https://i.ibb.co/g9yDfLc/one.jpg",
+      "https://i.ibb.co/vc7w1xc/download-18.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Google Pixel 6",
+    "description": "Google's flagship phone with Google Tensor chip",
+    "price": 80000,
+    "currency": "TK",
+    "category": "Smartphones",
+    "brand": "Google",
+    "rating": 4.5,
+    "stock": 15,
+    "badge": "New",
+    "imageUrl": [
+      "https://i.ibb.co/HKNV74n/pixel.jpg",
+      "https://i.ibb.co/48Dy7BM/download-20.jpg",
+      "https://i.ibb.co/DGj58xj/images-11.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Xiaomi Redmi Note 10 Pro",
+    "description": "Affordable smartphone with Snapdragon 732G",
+    "price": 40000,
+    "currency": "TK",
+    "category": "Smartphones",
+    "brand": "Xiaomi",
+    "rating": 4.4,
+    "stock": 50,
+    "badge": "Best Value",
+    "imageUrl": [
+      "https://i.ibb.co/0DkCTp3/image.png",
+      "https://i.ibb.co/yqKgP5h/image.png",
+      "https://i.ibb.co/0h65L03/image.png"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Sony WH-1000XM4",
+    "description": "Industry-leading noise canceling headphones",
+    "price": 35000,
+    "currency": "TK",
+    "category": "Headphones",
+    "brand": "Sony",
+    "rating": 4.9,
+    "stock": 40,
+    "badge": "Top Rated",
+    "imageUrl": [
+      "https://i.ibb.co/s1mtrx3/image.png",
+      "https://i.ibb.co/s1mtrx3/image.png",
+      "https://i.ibb.co/f1WbgH0/image.png"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Bose QuietComfort 35 II",
+    "description": "Wireless Bluetooth headphones with noise-canceling",
+    "price": 30000,
+    "currency": "TK",
+    "category": "Headphones",
+    "brand": "Bose",
+    "rating": 4.8,
+    "stock": 35,
+    "badge": "Top Rated",
+    "imageUrl": [
+      "https://i.ibb.co/yWGmryt/image.png",
+      "https://i.ibb.co/f21PsPz/image.png",
+      "https://i.ibb.co/Xb3dNkz/image.png"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Apple MacBook Air M1",
+    "description": "Apple's thinnest and lightest notebook, supercharged by the Apple M1 chip",
+    "price": 150000,
+    "currency": "TK",
+    "category": "Laptops",
+    "brand": "Apple",
+    "rating": 4.9,
+    "stock": 10,
+    "badge": "New",
+    "imageUrl": [
+      "https://i.ibb.co/0yBbMD0/image.png",
+      "https://i.ibb.co/zbvDNRN/image.png",
+      "https://i.ibb.co/DM2F23q/image.png"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Dell XPS 13",
+    "description": "High-performance laptop with Intel i7 processor",
+    "price": 140000,
+    "currency": "TK",
+    "category": "Laptops",
+    "brand": "Dell",
+    "rating": 4.7,
+    "stock": 8,
+    "badge": "Limited Stock",
+    "imageUrl": [
+      "https://i.ibb.co/NY2TFGh/image.png",
+      "https://i.ibb.co/JnfD2SX/image.png",
+      "https://i.ibb.co/v3xB1Dt/image.png"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "HP Spectre x360",
+    "description": "2-in-1 laptop with Intel i7 and stunning design",
+    "price": 135000,
+    "currency": "TK",
+    "category": "Laptops",
+    "brand": "HP",
+    "rating": 4.6,
+    "stock": 12,
+    "badge": "Best Seller",
+    "imageUrl": [
+      "https://i.ibb.co/vQD0gVP/image.png",
+      "https://i.ibb.co/9N5D972/image.png",
+      "https://i.ibb.co/Gkp3R4W/image.png"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Samsung Galaxy Tab S7",
+    "description": "High-end Android tablet with S Pen included",
+    "price": 60000,
+    "currency": "TK",
+    "category": "Tablets",
+    "brand": "Samsung",
+    "rating": 4.5,
+    "stock": 20,
+    "badge": "New",
+    "imageUrl": [
+      "https://i.ibb.co/NY2TFGh/image.png",
+      "https://i.ibb.co/JnfD2SX/image.png",
+      "https://i.ibb.co/v3xB1Dt/image.png"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Apple iPad Pro",
+    "description": "Powerful tablet with Apple M1 chip",
+    "price": 120000,
+    "currency": "TK",
+    "category": "Tablets",
+    "brand": "Apple",
+    "rating": 4.8,
+    "stock": 15,
+    "badge": "Best Seller",
+   "imageUrl": [
+      "https://i.ibb.co/s1mtrx3/image.png",
+      "https://i.ibb.co/s1mtrx3/image.png",
+      "https://i.ibb.co/f1WbgH0/image.png"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Amazon Kindle Paperwhite",
+    "description": "E-reader with high-resolution display and built-in light",
+    "price": 15000,
+    "currency": "TK",
+    "category": "E-readers",
+    "brand": "Amazon",
+    "rating": 4.7,
+    "stock": 50,
+    "badge": "Top Rated",
+    "imageUrl": [
+      "https://i.ibb.co/vQD0gVP/image.png",
+      "https://i.ibb.co/9N5D972/image.png",
+      "https://i.ibb.co/Gkp3R4W/image.png"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Fitbit Charge 5",
+    "description": "Advanced fitness and health tracker",
+    "price": 25000,
+    "currency": "TK",
+    "category": "Wearables",
+    "brand": "Fitbit",
+    "rating": 4.6,
+    "stock": 30,
+    "badge": "New",
+    "imageUrl": [
+      "https://i.ibb.co/HKNV74n/pixel.jpg",
+      "https://i.ibb.co/48Dy7BM/download-20.jpg",
+      "https://i.ibb.co/DGj58xj/images-11.jpg"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Garmin Forerunner 945",
+    "description": "Premium GPS running/triathlon smartwatch",
+    "price": 50000,
+    "currency": "TK",
+    "category": "Wearables",
+    "brand": "Garmin",
+    "rating": 4.7,
+    "stock": 20,
+    "badge": "Limited Stock",
+    "imageUrl": "https://i.ibb.co/BT1GmF0/apple-ipad-mini-starlight-2.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Sony PlayStation 5",
+    "description": "Next-gen gaming console with ultra-high-speed SSD",
+    "price": 75000,
+    "currency": "TK",
+    "category": "Gaming",
+    "brand": "Sony",
+    "rating": 4.9,
+    "stock": 5,
+    "badge": "Best Seller",
+    "imageUrl": [
+      "https://i.ibb.co/vQD0gVP/image.png",
+      "https://i.ibb.co/9N5D972/image.png",
+      "https://i.ibb.co/Gkp3R4W/image.png"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Microsoft Xbox Series X",
+    "description": "Most powerful Xbox ever with 12 teraflops of processing power",
+    "price": 70000,
+    "currency": "TK",
+    "category": "Gaming",
+    "brand": "Microsoft",
+    "rating": 4.8,
+    "stock": 7,
+    "badge": "Top Rated",
+    "imageUrl": [
+      "https://i.ibb.co/s1mtrx3/image.png",
+      "https://i.ibb.co/s1mtrx3/image.png",
+      "https://i.ibb.co/f1WbgH0/image.png"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Nintendo Switch",
+    "description": "Versatile gaming console you can play at home or on-the-go",
+    "price": 35000,
+    "currency": "TK",
+    "category": "Gaming",
+    "brand": "Nintendo",
+    "rating": 4.7,
+    "stock": 10,
+    "badge": "Best Seller",
+    "imageUrl": [
+      "https://i.ibb.co/HKNV74n/pixel.jpg",
+      "https://i.ibb.co/48Dy7BM/download-20.jpg",
+      "https://i.ibb.co/DGj58xj/images-11.jpg"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Canon EOS R5",
+    "description": "Professional mirrorless camera with 45 MP sensor",
+    "price": 300000,
+    "currency": "TK",
+    "category": "Cameras",
+    "brand": "Canon",
+    "rating": 4.9,
+    "stock": 5,
+    "badge": "Best Seller",
+    "imageUrl": [
+      "https://i.ibb.co/NY2TFGh/image.png",
+      "https://i.ibb.co/JnfD2SX/image.png",
+      "https://i.ibb.co/v3xB1Dt/image.png"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Nikon Z6 II",
+    "description": "Full-frame mirrorless camera for high-quality images and videos",
+    "price": 250000,
+    "currency": "TK",
+    "category": "Cameras",
+    "brand": "Nikon",
+    "rating": 4.8,
+    "stock": 7,
+    "badge": "Best Seller",
+    "imageUrl": [
+      "https://i.ibb.co/NY2TFGh/image.png",
+      "https://i.ibb.co/JnfD2SX/image.png",
+      "https://i.ibb.co/v3xB1Dt/image.png"
+    ]
+  }
+]

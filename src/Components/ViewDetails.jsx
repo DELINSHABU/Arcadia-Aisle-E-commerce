@@ -1,9 +1,12 @@
 import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
+import ProductsPage from "./ProductsPage";
 
 function ViewDetails() {
 
     const products = useLoaderData();
+    console.log(products)
+
     const [quantity, setQuantity] = useState(1);
     const incrementQuantity = () => setQuantity(quantity + 1);
     const decrementQuantity = () => setQuantity(quantity > 1 ? quantity - 1 : 1);
@@ -12,9 +15,9 @@ function ViewDetails() {
     const {
         id,
         price,
-        title,
+        name,
         brand,
-        image,
+        imageUrl,
     } = products;
 
 
@@ -35,57 +38,63 @@ function ViewDetails() {
         const item = {
             id,
             price,
-            title,
+            name,
             brand,
-            image,
+            imageUrl,
             quantity,
         };
         saveToLocalStorage('cart', item);
         console.log('Item added to cart:', item);
     };
+    const [changeImg, setChangeImg] = useState(imageUrl[0])
+    const handleImage = (img) => {
+        setChangeImg(img)
+    }
 
 
     return (
-        <div><div className="flex flex-col items-center bg-gray-100 py-5 ">
-            <div className="flex justify-center items-center py-5 ">
-                <h2 className="text-xl md:text-4xl font-serif uppercase py-5">Your product information</h2>
-            </div>
-
-            <div>
-
-                <div className="flex flex-col lg:flex-row lg:items-start bg-white shadow-lg rounded-lg overflow-hidden max-w-4xl">
-                    <div className="flex-shrink-0 p-4">
-                        <img className="h-64 w-64 object-cover" src={image} alt={title} />
-                        <div className="flex space-x-2 mt-2">
-                            <img className="h-16 w-16 object-cover" src={image} alt="Thumbnail 1" />
-                            <img className="h-16 w-16 object-cover" src={image} alt="Thumbnail 2" />
-                            <img className="h-16 w-16 object-cover" src={image} alt="Thumbnail 3" />
-                            <img className="h-16 w-16 object-cover" src={image} alt="Thumbnail 4" />
-                        </div>
-                    </div>
-                    <div className="p-4 flex-1">
-                        <h2 className="text-xl font-bold">Yamaha MT-15</h2>
-                        <p className="text-gray-700 mt-2">Brand: {brand}</p>
-                        <p className="text-gray-700 mt-2">Tk: {price}</p>
-                        <div className="mt-4">
-                            <span className="text-gray-700">Quantity:</span>
-                            <button onClick={decrementQuantity} className="mx-2 px-3 py-1 bg-gray-200 rounded">-</button>
-                            <span>{quantity}</span>
-                            <button onClick={incrementQuantity} className="mx-2 px-3 py-1 bg-gray-200 rounded">+</button>
-                        </div>
-                        <div className="mt-4 flex items-center">
-                            <span className="text-yellow-500">★★★★★</span>
-                        </div>
-                        <div className="mt-4 flex space-x-4">
-                            <button onClick={handleOrder} className="px-4 py-2 bg-orange-500  text-white rounded">Buy</button>
-                            <button onClick={handleOrder} className="px-4 py-2 bg-orange-500  text-white rounded">Add to cart</button>
-                        </div>
-                    </div>
+        <div className="container mx-auto">
+            <div className="flex flex-col items-center bg-gray-100 py-5 ">
+                <div className="flex justify-center items-center py-5 ">
+                    <h2 className="text-xl md:text-4xl font-serif uppercase py-5">Your product information</h2>
                 </div>
 
-            </div>
+                <div>
+                    <div className="flex flex-col lg:flex-row lg:items-start bg-white shadow-lg rounded-lg overflow-hidden">
+                        <div className="p-4">
+                            <img className="h-72 w-72 object-cover rounded-md" src={changeImg} alt={name} />
+                            <div className="flex space-x-4 mx-auto mt-2">
+                                <img className="h-16 w-16 object-cover" onClick={() => handleImage(imageUrl[0])} src={imageUrl[0]} alt={name} />
+                                <img className="h-16 w-16 object-cover" onClick={() => handleImage(imageUrl[1])} src={imageUrl[1]} alt={name} />
+                                <img className="h-16 w-16 object-cover" onClick={() => handleImage(imageUrl[2])} src={imageUrl[2]} alt={name} />
+                               
+                               
+                            </div>
+                        </div>
+                        <div className="p-4 flex-1">
+                            <h2 className="text-xl font-bold">{name}</h2>
+                            <p className="text-gray-700 mt-2">Brand: {brand}</p>
+                            <p className="text-gray-700 mt-2">Tk: {price}</p>
+                            <div className="mt-4">
+                                <span className="text-gray-700">Quantity:</span>
+                                <button onClick={decrementQuantity} className="mx-2 px-3 py-1 bg-gray-200 rounded">-</button>
+                                <span>{quantity}</span>
+                                <button onClick={incrementQuantity} className="mx-2 px-3 py-1 bg-gray-200 rounded">+</button>
+                            </div>
+                            <div className="mt-4 flex items-center">
+                                <span className="text-yellow-500">★★★★★</span>
+                            </div>
+                            <div className="mt-4 flex space-x-4">
+                                <button onClick={handleOrder} className="px-4 py-2 bg-orange-500  text-white rounded">Buy</button>
+                                <button onClick={handleOrder} className="px-4 py-2 bg-orange-500  text-white rounded">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
 
-        </div></div>
+                </div>
+                <ProductsPage ></ProductsPage>
+            </div>
+        </div>
     )
 }
 

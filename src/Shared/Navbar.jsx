@@ -28,10 +28,11 @@ function Navbar() {
     return () => {
       window.removeEventListener('storage', handleStorageChange);
     };
-  }, []); 
+  }, []);
   const navList =
     <>
-      <li className='hover:text-black  text-white rounded ' ><Link>Home</Link></li>
+      <li className='hover:text-black  text-white rounded ' ><Link to="/">Home</Link></li>
+      <li className='hover:text-black  text-white rounded ' ><Link to="/allProducts">All Items</Link></li>
       <li className="dropdown dropdown-hover z-50 ">
         <div tabIndex={0} role="button" className='hover:text-black  text-white rounded '>Fashion & Clothing</div>
         <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 shadow ">
@@ -111,8 +112,8 @@ function Navbar() {
             <Link className="shadow-lg border-2 hover:border-white md:p-2  text-white  lg:-ml-0 md:-ml-12 lg:w-[120px] w-[150px] px-1 bg-gradient-to-r from-[#F26E00] to-[#F6A100] ml-0 rounded-lg">Arcadia Aisle</Link>
           </div>
           {/* Search bar */}
-          <label className="md:mx-2">
-            <input type="text" className="px-2  py-1 rounded-xl md:w-72  w-24 text-black ml-1 md:ml-8 lg:ml-0" placeholder="Search" />
+          <label className="md:mx-1">
+            <input type="text" className="px-2 py-1 rounded-xl md:w-60  w-24 text-black ml-1 md:ml-8 lg:ml-0" placeholder="Search" />
           </label>
           {/* lg menu */}
           <div className="navbar-center hidden lg:flex">
@@ -124,7 +125,7 @@ function Navbar() {
           </div>
           <div className="navbar-end">
             <Link to="/cart">
-              <div className='hover:text-black transition hover:bg-white lg:mx-0 md:mx-5 px-2 rounded py-1'>
+              <div className='hover:text-black transition hover:bg-white lg:mx-0 md:mx-0 px-2 rounded py-1'>
                 <div className="indicator">
                   {cartItemCount > 0 && (
                     <span className="indicator-item badge -top-1">{cartItemCount}</span>
