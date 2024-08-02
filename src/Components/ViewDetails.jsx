@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import ProductsPage from "./ProductsPage";
-
+import { toast, ToastContainer } from "react-toastify";
 function ViewDetails() {
 
     const products = useLoaderData();
-    console.log(products)
+    // console.log(products)
 
     const [quantity, setQuantity] = useState(1);
     const incrementQuantity = () => setQuantity(quantity + 1);
@@ -30,7 +30,16 @@ function ViewDetails() {
         } else {
             data.push(value);
         }
-
+        toast.success('Products Add to Cart', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            });
         localStorage.setItem(key, JSON.stringify(data));
     };
 
@@ -58,7 +67,7 @@ function ViewDetails() {
                 <div className="flex justify-center items-center py-5 ">
                     <h2 className="text-xl md:text-4xl font-serif uppercase py-5">Your product information</h2>
                 </div>
-
+                <ToastContainer />
                 <div>
                     <div className="flex flex-col lg:flex-row lg:items-start bg-white shadow-lg rounded-lg overflow-hidden">
                         <div className="p-4">
@@ -67,8 +76,8 @@ function ViewDetails() {
                                 <img className="h-16 w-16 object-cover" onClick={() => handleImage(imageUrl[0])} src={imageUrl[0]} alt={name} />
                                 <img className="h-16 w-16 object-cover" onClick={() => handleImage(imageUrl[1])} src={imageUrl[1]} alt={name} />
                                 <img className="h-16 w-16 object-cover" onClick={() => handleImage(imageUrl[2])} src={imageUrl[2]} alt={name} />
-                               
-                               
+
+
                             </div>
                         </div>
                         <div className="p-4 flex-1">

@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
     const [cartItems, setCartItems] = useState([]);
-
+    const [totalPrice, setTotalPrice] = useState(0);
+    const [selectedItems, setSelectedItems] = useState([]);
     useEffect(() => {
         const items = getFromLocalStorage('cart');
         setCartItems(items);
@@ -27,6 +29,22 @@ const Cart = () => {
         setCartItems(prevItems => prevItems.filter(item => item.id !== id));
     };
 
+    const handleOrder = (item, price) => {
+        setSelectedItems(prevItems => {
+            const isSelected = prevItems.some(selectedItem => selectedItem.id === item.id);
+            if (isSelected) {
+                return prevItems.filter(selectedItem => selectedItem.id !== item.id);
+            } else {
+                return [...prevItems, { ...item, price }];
+            }
+        });
+    };
+
+    useEffect(() => {
+        const total = selectedItems.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+        setTotalPrice(total);
+    }, [selectedItems]);
+
     return (
         <div className="container mx-auto py-10">
             <div className="flex justify-center items-center py-5 ">
@@ -49,7 +67,10 @@ const Cart = () => {
                     </div>
                 ) : (
                     cartItems?.map((item, index) => (
-                        <div key={index} className=" flex flex-wrap justify-center items-center gap-4 bg-white shadow-lg rounded-lg p-2 my-2">
+                        <div key={index} className=" grid grid-cols-1 md:grid-cols-4 justify-around items-center gap-4 bg-white shadow-lg rounded-lg p-2 my-2">
+
+                            <input type="checkbox" onClick={() => handleOrder(item, item.price)} className="checkbox checkbox-warning col-auto" />
+
                             <img className="h-32 w-32 object-cover rounded-md" src={item.imageUrl} alt={item.name} />
                             <div>
                                 <h3 className="text-xl font-bold">{item.name}</h3>
@@ -63,15 +84,14 @@ const Cart = () => {
                             >
                                 Delete
                             </button>
-                            <button
-                                onClick={() => handleDelete(item.id)}
-                                className="bg-red-500 text-white px-4 py-2 rounded"
-                            >
-                                Delete
-                            </button>
+
                         </div>
                     ))
                 )}
+                <div className='flex justify-around items-center'>
+                    <p className='text-xl'>Total Price: {totalPrice}</p>
+                    <Link className="bg-orange-500 text-white px-4 py-2 rounded">Order Now</Link>
+                </div>
             </div>
         </div>
     );

@@ -10,6 +10,8 @@ import Home from './Page/Home/Home.jsx';
 import ViewDetails from './Components/ViewDetails.jsx';
 import Cart from './Components/Cart.jsx';
 import AllProducts from './Page/AllProducts/AllProducts.jsx';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 const router = createBrowserRouter([

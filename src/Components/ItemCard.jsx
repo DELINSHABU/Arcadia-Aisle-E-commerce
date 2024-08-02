@@ -14,7 +14,7 @@ function ItemCard({ item, idx }) {
             <div
                 className="card relative  bg-base-100 shadow-xl pt-3 pb-2  hover:scale-110 transform-gpu transition-transform duration-300  ">
                 <div className='indicator -right-[84%] '>
-                    <div className="indicator-item absolute w-[70px]  bg-orange-500 text-xs text-white font-bold p-1  transform rounded-tl-full rounded-bl-full">
+                    <div className="indicator-item absolute w-[78px]  bg-orange-500 text-xs text-white font-bold p-1  transform rounded-tl-full rounded-bl-full">
                         {item?.badge}
                     </div>
                 </div>

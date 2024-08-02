@@ -20,8 +20,8 @@ function Banner() {
         AOS.init()
     }, [])
     return (
-        <div className='container mx-auto'>
-            <div className='py-10'>
+       
+            <div className=' container mx-auto py-10 '>
                 <Swiper
                     spaceBetween={30}
                     loop={true}
@@ -45,9 +45,10 @@ function Banner() {
                         slideShadows: true,
                     }}
                     modules={[Autoplay, EffectCoverflow, Pagination, Navigation, EffectFade]}
-                    className="mySwiper"
+                    className="mySwiper "
 
                 >
+
                     <SwiperSlide>
                         <div className=' relative mx-auto w-[100%] bg-black rounded-2xl'>
                             <div className=' absolute top-[20px] md:top-[50px] right-0   text-white px-5 z-10'>
@@ -65,7 +66,7 @@ function Banner() {
                         <div className=' relative mx-auto w-[100%] bg-black rounded-2xl'>
                             <div className=' absolute top-[30px] md:top-[80px]  lg:left-10  text-white px-5 z-10'>
                                 <h1 className='text-2xl md:text-5xl font-bold font-serif'>I am Growing</h1>
-                                <p className='py-5 text-lg mr-12 md:mr-0'>Embrace each new day's journey in comfort and confidence.</p>
+                                <p className='py-5 text-lg mr-12 md:mr-0'>Embrace each new day s journey in comfort and confidence.</p>
                                 <button className='btn lg::w-72 bg-white text-black my-1 md:my-4   lg:mx-16 ml-auto lg:flex lg:justify-around w-fit '>SHOP NOW</button>
                             </div>
 
@@ -87,10 +88,11 @@ function Banner() {
                                 <Lottie className='h-72 md:h-96 lg:w-[100%]  mx-auto object-cover bg-white  rounded-2xl' animationData={Homebanner}></Lottie>
                                 <Lottie className='h-96 hidden md:block lg:w-[100%]  mx-auto object-cover bg-white  rounded-2xl' animationData={Homebanner1}></Lottie>
                             </div>
-                            {/* <img className='h-96 w-[100%]  mx-auto object-right-top  opacity-50 rounded-2xl' src="https://i.ibb.co/qghDLmQ/img4.jpg" /> */}
+
                         </div>
 
                     </SwiperSlide>
+
                     <SwiperSlide>
                         <div className=' relative mx-auto w-[100%] '>
                             <div className=' absolute top-1/3 md:top-[100px] right-0   text-white px-5 z-10'>
@@ -110,7 +112,7 @@ function Banner() {
 
                 </Swiper>
             </div>
-        </div >
+        
 
 
 

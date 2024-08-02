@@ -3,6 +3,7 @@ import { MdShoppingCartCheckout, MdLogin } from "react-icons/md";
 import { useEffect, useState } from 'react';
 
 
+
 function Navbar() {
   const [cartItemCount, setCartItemCount] = useState(0);
 
@@ -10,7 +11,6 @@ function Navbar() {
     const getCartItemsCount = () => {
       const items = localStorage.getItem('cart');
       const data = items ? JSON.parse(items) : [];
-      // Sum up the quantities of all items in the cart
       const count = data.reduce((total, item) => total + item.quantity, 0);
       setCartItemCount(count);
     };
@@ -80,8 +80,9 @@ function Navbar() {
 
     </>
   return (
-    <div className='bg-gradient-to-r from-[#F26E00] to-[#F6A100]'>
-      <div className=" container mx-auto  text-white z-50">
+
+    <div className='bg-gradient-to-r from-[#F26E00] to-[#F6A100] container mx-auto text-white z-50 '>
+      <div className='bg-gradient-to-r from-[#F26E00] to-[#F6A100]'>
         <div className='navbar'>
           <div className="navbar-start">
             {/* responsive menu */}
@@ -140,6 +141,8 @@ function Navbar() {
         </div>
       </div>
     </div>
+
+
   )
 }
 

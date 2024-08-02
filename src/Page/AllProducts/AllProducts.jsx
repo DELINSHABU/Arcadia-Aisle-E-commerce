@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 function AllProducts() {
     const [item, setItem] = useState()
     const [items, setItems] = useState()
-
     useEffect(() => {
         fetch("/AllProducts.json")
             .then(data => data.json())
@@ -44,17 +43,19 @@ function AllProducts() {
         }
 
     }
+
     // console.log(items);
     return (
         <div className="container mx-auto">
             <Title name={"All Products"}></Title>
 
-            <div className="md:flex mx-auto justify-center my-5">
+
+            <div className="flex mx-auto justify-center items-center my-5">
                 <div id="Input Section" className="w-fit mx-auto">
-                    <input ref={searchRef} type="text" className="border-2 rounded-xl border-orange-500 p-1 " />
+                    <input ref={searchRef} type="text" className="border-2 rounded-xl border-orange-500 p-1 md:w-fit w-36 " />
                     <button onClick={handleSearch} className="btn btn-sm bg-orange-500 text-white hover:bg-orange-500">Search </button>
                 </div>
-                <div id="dropdown" className="w-fit mx-auto py-3 md:py-0">
+                <div id="dropdown" className="w-fit mx-auto py-3 md:py-0 hover:bg-orange-500">
                     <select onClick={handleSort} name="" id="" className="border-2 p-1 border-orange-500">
                         <option value="Default">Default</option>
                         <option value="lowtohigh">Low To High</option>
