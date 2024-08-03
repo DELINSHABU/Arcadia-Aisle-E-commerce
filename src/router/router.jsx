@@ -14,6 +14,16 @@ import Pant from "../Page/Pant/Pant";
 import Shoes from "../Page/Shoes/Shoes";
 import AppleMacbook from "../Page/AppleMacbook/AppleMacbook";
 import BusinessLaptop from "../Page/BusinessLaptop/BusinessLaptop";
+import GamingLaptop from "../Page/GamingLaptop/GamingLaptop";
+import UltraBook from "../Page/UltraBook/UltraBook";
+import HairCare from "../Page/HairCare/HairCare";
+import SkinCare from "../Page/SkinCare/SkinCare";
+import ManCare from "../Page/ManCare/ManCare";
+import WomanCare from "../Page/WomanCare/WomanCare";
+import Cars from "../Page/Cars/Cars";
+import MotorBikes from "../Page/MotorBikes/MotorBikes";
+import CarsParts from "../Page/CarsParts/CarsParts";
+import MotorBikesParts from "../Page/MotorBikesParts/MotorBikesParts";
 const router = createBrowserRouter([
     {
         path: "/",
@@ -72,6 +82,46 @@ const router = createBrowserRouter([
             {
                 path: "/businessLaptop",
                 element: <BusinessLaptop></BusinessLaptop>
+            },
+            {
+                path: "/gamingLaptop",
+                element: <GamingLaptop></GamingLaptop>
+            },
+            {
+                path: "/ultraBook",
+                element: <UltraBook></UltraBook>
+            },
+            {
+                path: "/hairCare",
+                element: <HairCare></HairCare>
+            },
+            {
+                path: "/skinCare",
+                element: <SkinCare></SkinCare>
+            },
+            {
+                path: "/manCare",
+                element: <ManCare></ManCare>
+            },
+            {
+                path: "/womanCare",
+                element: <WomanCare></WomanCare>
+            },
+            {
+                path: "/cars",
+                element: <Cars></Cars>
+            },
+            {
+                path: "/motorBikes",
+                element: <MotorBikes></MotorBikes>
+            },
+            {
+                path: "/carsParts",
+                element: <CarsParts></CarsParts>
+            },
+            {
+                path: "/motorbikesParts",
+                element: <MotorBikesParts></MotorBikesParts>
             },
         ]
     },

@@ -4,7 +4,7 @@ import Empty from "../../Components/Empty"
 function Shirt() {
     return (
         <div>
-            <Empty name="Sari"></Empty>
+            <Empty name="Shirt"></Empty>
         </div>
     )
 }

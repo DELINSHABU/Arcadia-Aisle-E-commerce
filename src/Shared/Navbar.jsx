@@ -61,7 +61,7 @@ function Navbar() {
           <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="/hairCare">Hair Care</Link></li>
           <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="/skinCare">Skin Care</Link></li>
           <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="manCare">Man Care</Link></li>
-          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="/wamanCare">Woman Care</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="/womanCare">Woman Care</Link></li>
         </ul>
 
       </li>
@@ -71,7 +71,7 @@ function Navbar() {
           <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="/cars">Cars</Link></li>
           <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="/motorBikes">MotorBikes</Link></li>
           <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="carsParts"> Cars Parts</Link></li>
-          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="motorbikesPaets">MotorBikes Parts</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="/motorbikesParts">MotorBikes Parts</Link></li>
         </ul>
 
       </li>
