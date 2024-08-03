@@ -36,42 +36,42 @@ function Navbar() {
       <li className="dropdown dropdown-hover z-50 ">
         <div tabIndex={0} role="button" className='hover:text-black  text-white rounded '>Fashion & Clothing</div>
         <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 shadow ">
-          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>Shirt</Link></li>
-          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>T-Shirt</Link></li>
-          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>Sari</Link></li>
-          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>Kurta</Link></li>
-          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>Pant</Link></li>
-          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>Shoes</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="/shirt">Shirt</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="/t-shirt">T-Shirt</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="/sari">Sari</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="/kurta">Kurta</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="/pant">Pant</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="/shoes">Shoes</Link></li>
         </ul>
 
       </li>
       <li className="dropdown dropdown-hover z-50 ">
         <div tabIndex={0} role="button" className='hover:text-black  text-white rounded ' >Electronic Accessories</div>
         <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 shadow ">
-          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>Apple MacBook</Link></li>
-          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>Business Laptop</Link></li>
-          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>Gaming Laptop</Link></li>
-          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>Ultrabook</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="/appleMacbook">Apple MacBook</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="/businessLaptop">Business Laptop</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="/gamingLaptop">Gaming Laptop</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="Ultrabook">Ultrabook</Link></li>
         </ul>
 
       </li>
       <li className="dropdown dropdown-hover z-50 ">
         <div tabIndex={0} role="button" className='hover:text-black  text-white rounded ' >Health & Beauty</div>
         <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 shadow ">
-          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>Hair Care</Link></li>
-          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>Skin Care</Link></li>
-          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>Man Care</Link></li>
-          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>Woman Care</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="/hairCare">Hair Care</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="/skinCare">Skin Care</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="manCare">Man Care</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="/wamanCare">Woman Care</Link></li>
         </ul>
 
       </li>
       <li className="dropdown dropdown-hover z-50 ">
         <div tabIndex={0} role="button" className='hover:text-black  text-white rounded ' >Cars & MotorBikes</div>
         <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 shadow ">
-          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>Cars</Link></li>
-          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>MotorBikes</Link></li>
-          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link> Cars Parts</Link></li>
-          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link>MotorBikes Parts</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="/cars">Cars</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="/motorBikes">MotorBikes</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="carsParts"> Cars Parts</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="motorbikesPaets">MotorBikes Parts</Link></li>
         </ul>
 
       </li>
