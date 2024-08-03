@@ -37,7 +37,7 @@ function Navbar() {
         <div tabIndex={0} role="button" className='hover:text-black  text-white rounded '>Fashion & Clothing</div>
         <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 shadow ">
           <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="/shirt">Shirt</Link></li>
-          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="/t-shirt">T-Shirt</Link></li>
+          <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="/t-Shirt">T-Shirt</Link></li>
           <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="/sari">Sari</Link></li>
           <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="/kurta">Kurta</Link></li>
           <li className='  text-black hover:bg-orange-400 hover:text-white rounded-2xl'><Link to="/pant">Pant</Link></li>
