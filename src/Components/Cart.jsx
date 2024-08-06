@@ -10,7 +10,6 @@ const Cart = () => {
         const items = getFromLocalStorage('cart');
         setCartItems(items);
     }, []);
-
     const getFromLocalStorage = (key) => {
         const data = localStorage.getItem(key);
         return data ? JSON.parse(data) : [];
@@ -45,7 +44,7 @@ const Cart = () => {
         const total = selectedItems.reduce((acc, item) => acc + (item.price * item.quantity), 0);
         setTotalPrice(total);
     }, [selectedItems]);
-
+    // console.log(selectedItems)
     return (
         <div className="container mx-auto py-10">
             <div className="flex justify-center items-center py-2 ">
@@ -57,6 +56,7 @@ const Cart = () => {
                 ) : (
                     cartItems?.map((item, index) => (
                         <div key={index}>
+
                             <div className=" grid grid-cols-1 md:grid-cols-4 justify-around items-center gap-4 bg-white shadow-lg rounded-lg p-2 my-2">
 
                                 <input type="checkbox" onClick={() => handleOrder(item, item.price)} className="checkbox checkbox-warning col-auto" />
@@ -77,16 +77,25 @@ const Cart = () => {
 
 
                             </div>
-                            <div className='flex justify-around items-center'>
-                                <p className='text-xl'>Total Price: {totalPrice}</p>
-                                <Link className="bg-orange-500 text-white px-4 py-2 rounded">Order Now</Link>
-                            </div>
+
                         </div>
                     ))
-                )}
+                )
+
+                }
+                {
+                    totalPrice > 0 ? <div className='flex justify-around items-center'>
+                        <p className='text-xl'>Total Price: {totalPrice}</p>
+                        <Link to="/order"  className="bg-orange-500 text-white px-4 py-2 rounded">Order Now</Link>
+                    </div> : <div className='flex justify-around items-center'>
+                        <p className='text-xl'>Total Price: {totalPrice}</p>
+                        <Link className="bg-orange-500 text-white px-4 py-2 rounded">Order Now</Link>
+                    </div>
+                }
+
 
             </div>
-        </div>
+        </div >
     );
 };
 
