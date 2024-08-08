@@ -4,7 +4,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import { Autoplay, Pagination, Navigation, EffectCoverflow, EffectFade } from 'swiper/modules';
 import 'swiper/css/effect-fade';
-import 'swiper/css/navigation';
+// import 'swiper/css/navigation';
 import { useEffect, } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -12,6 +12,8 @@ import CountdownTimer from './CountdownTimer';
 import Homebanner from "../../../public/Homebanner.json"
 import Homebanner1 from "../../../public/Homebanner1.json"
 import Lottie from 'lottie-react';
+import shavai from "./img/shavai.png";
+import "./Banner.css"
 
 function Banner() {
     const targetDate = new Date();
@@ -21,12 +23,12 @@ function Banner() {
     }, [])
     return (
        
-            <div className=' container mx-auto py-10 '>
+            <div className='bannerDiv'>
                 <Swiper
                     spaceBetween={30}
                     loop={true}
                     autoplay={{
-                        delay: 3500,
+                        delay: 100000,
                         disableOnInteraction: false,
                     }}
                     pagination={{
@@ -44,7 +46,7 @@ function Banner() {
                         modifier: 1,
                         slideShadows: true,
                     }}
-                    modules={[Autoplay, EffectCoverflow, Pagination, Navigation, EffectFade]}
+                    modules={[Autoplay, EffectCoverflow, Pagination, EffectFade]}
                     className="mySwiper "
 
                 >
@@ -52,12 +54,13 @@ function Banner() {
                     <SwiperSlide>
                         <div className=' relative mx-auto w-[100%] bg-black rounded-2xl'>
                             <div className=' absolute top-[20px] md:top-[50px] right-0   text-white px-5 z-10'>
-                                <h1 className='text-2xl md:text-3xl lg:text-5xl font-bold font-serif '>Our Best <span className='text-[#F26E00]'>Luxury</span><br /> Watch Collection <br /> For You</h1>
-                                <p className='py-5 text-lg mx-auto'>you can adjust  and personality this names <br /> to match brand and style</p>
+                                <h1 className='text-4xl md:text-3xl lg:text-5xl font-bold  '>Best combo <span className='text-[#F26E00]'>Offer</span><br /> Qtr Shawai 
+                                + mint Lime</h1>
+                                <p className='py-5 text-lg mx-auto'>A refreshing burst of citrus and mint lime the smoky, <br /> grilled flavors of the Qtr Shawai chicken.</p>
                                 <button className='btn md:w-72 bg-white text-black  lg:mx-16 ml-auto flex justify-center w-fit '>SHOP NOW</button>
                             </div>
 
-                            <img className='h-96 w-[100%]  mx-auto object-cover opacity-50  rounded-2xl' src='https://i.ibb.co/NxX0gFp/img5.jpg' />
+                            <img className='h-96 w-[100%]  mx-auto object-cover opacity-50  rounded-2xl' src={shavai} />
 
 
                         </div>
@@ -70,7 +73,7 @@ function Banner() {
                                 <button className='btn lg::w-72 bg-white text-black my-1 md:my-4   lg:mx-16 ml-auto lg:flex lg:justify-around w-fit '>SHOP NOW</button>
                             </div>
 
-                            <img className='h-72 md:h-96 w-[100%]  mx-auto object-fill  opacity-50  rounded-2xl' src="https://i.ibb.co/Kqtpfzb/img7.jpg" />
+                            <img className='h-72 md:h-96 w-[100%]  mx-auto object-fill  opacity-50  rounded-2xl' src={shavai}/>
                         </div>
 
                     </SwiperSlide>
@@ -92,7 +95,6 @@ function Banner() {
                         </div>
 
                     </SwiperSlide>
-
                     <SwiperSlide>
                         <div className=' relative mx-auto w-[100%] '>
                             <div className=' absolute top-1/3 md:top-[100px] right-0   text-white px-5 z-10'>

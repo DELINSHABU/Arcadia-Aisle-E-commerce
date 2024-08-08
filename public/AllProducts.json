@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Apple iPhone 14",
+    "name": "mint lime",
     "description": "Latest iPhone model with A15 Bionic chip",
     "price": 117000,
     "currency": "TK",
@@ -11,7 +11,7 @@
     "stock": 25,
     "badge": "New",
     "imageUrl": [
-      "https://i.ibb.co/pKsYndy/apple14.jpg",
+      "/final/image(11).jpg",
       "https://i.ibb.co/WGsNCfr/apple141.jpg",
       "https://i.ibb.co/pQ0h0JN/download-13.jpg",
       "https://i.ibb.co/H45QF6R/download-14.jpg"

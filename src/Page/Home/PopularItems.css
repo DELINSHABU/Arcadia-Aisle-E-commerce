@@ -1,0 +1,13 @@
+:root {
+    --primary-color: #0A6847;
+    --secondary-color: #FFF35E;
+  }
+  .popularItemsDiv{
+    background-color: var(--primary-color);
+  }
+  .container h1{
+    padding-top: 2vh;
+    font-size: 4vh;
+    color: var(--secondary-color) !important;
+    text-align: center;
+  }

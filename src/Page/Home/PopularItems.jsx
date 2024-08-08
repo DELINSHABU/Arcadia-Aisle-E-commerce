@@ -4,6 +4,7 @@ import { useState } from 'react'
 import "./BuyNowButton.css"
 import Aos from 'aos';
 import ItemCard from '../../Components/ItemCard';
+import "./PopularItems.css"
 
 function PopularItems() {
     const [items, setItems] = useState([])
@@ -16,9 +17,10 @@ function PopularItems() {
         Aos.init();
     }, [])
     return (
-        <div className='bg-gray-100'>
+        <div className='popularItemsDiv'>
             <div className='container mx-auto '>
-                <Title name={"Popular Items"}></Title>
+            {/* <Title className="title" style={{ color: 'red'}}  name={"Popular Orders"}></Title> */}
+            <h1> Popular Orders</h1>
 
                 <div className='relative grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mx-2  py-10'>
                     {

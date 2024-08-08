@@ -2,6 +2,6 @@
     --primary-color: #0A6847;
     --secondary-color: #FFF35E;
   }
-  .mainBody{
-    background-color: var(--primary-color) !important;
-  }
+  .bannerDiv {
+   background-color: var(--primary-color);
+}

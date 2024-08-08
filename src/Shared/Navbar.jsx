@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
 import { MdShoppingCartCheckout, MdLogin } from "react-icons/md";
 import { useEffect, useState } from 'react';
-
+import "./navbar.css"
+import bloomImage from "./img/bloom-graden-cafe-text.png";
 
 
 function Navbar() {
@@ -81,12 +82,12 @@ function Navbar() {
     </>
   return (
 
-    <div className='bg-gradient-to-r from-[#F26E00] to-[#F6A100] container mx-auto text-white z-50 '>
-      <div className='bg-gradient-to-r from-[#F26E00] to-[#F6A100]'>
+    <div className=''>
+      <div className=''>
         <div className='navbar'>
           <div className="navbar-start">
             {/* responsive menu */}
-            <div className="drawer drawer-end lg:hidden z-10" >
+            <div className="drawer drawer-end lg:hidden z-20" >
               <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
               <div className="drawer-content">
                 <label htmlFor="my-drawer-4" className="drawer-button"><svg
@@ -105,16 +106,18 @@ function Navbar() {
               </div>
               <div className="drawer-side">
                 <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
-                <ul className="menu bg-gradient-to-r from-[#F26E00] to-[#F6A100] text-base-content min-h-full w-56 px-4 ">
+                <ul className="menu text-base-content min-h-full w-56 px-4 ">
                   {navList}
                 </ul>
               </div>
             </div>
-            <Link className="shadow-lg border-2 hover:border-white md:p-2  text-white  lg:-ml-0 md:-ml-12 lg:w-[120px] w-[150px] px-1 bg-gradient-to-r from-[#F26E00] to-[#F6A100] ml-0 rounded-lg">Arcadia Aisle</Link>
+            <Link className="navbarlogo">
+            <img src={bloomImage} alt="Bloom Garden Cafe" />
+            </Link>
           </div>
           {/* Search bar */}
           <label className="md:mx-1">
-            <input type="text" className="px-2 py-1 rounded-xl md:w-60  w-24 text-black ml-1 md:ml-8 lg:ml-0" placeholder="Search" />
+            {/* <input type="text" className="px-2 py-1 rounded-xl md:w-60  w-24 text-black ml-1 md:ml-8 lg:ml-0" placeholder="Search" /> */}
           </label>
           {/* lg menu */}
           <div className="navbar-center hidden lg:flex">
@@ -136,7 +139,7 @@ function Navbar() {
                 </div>
               </div>
             </Link>
-            <Link className="px-1 text-xl font-serif bg-white rounded text-black hover:text-white hover:bg-black border-none flex justify-center items-center gap-1 ml-2"><MdLogin />Login</Link>
+            <Link className="px-1 text-xl bg-white rounded text-black hover:text-white hover:bg-black border-none flex justify-center items-center gap-1 ml-2"><MdLogin />Login</Link>
           </div>
         </div>
       </div>

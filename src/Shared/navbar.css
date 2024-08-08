@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --primary-color: #0A6847;
+    --secondary-color: #FFF35E;
+}
+
+
+body{
+    padding: 0%;
+    
+}
+.navbar{
+    background-color: var(--primary-color);
+    
+}
+.navbar li{
+    color: var(--secondary-color);
+    font-family: "Inter", sans-serif !important;
+
+}
+.navbarlogo img{
+    height: 50%;
+}

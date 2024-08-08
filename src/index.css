@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-  font-family: serif;
+  font-family: "Inter", sans-serif;
 }
 .card:hover .icons-container {
   display: flex;
