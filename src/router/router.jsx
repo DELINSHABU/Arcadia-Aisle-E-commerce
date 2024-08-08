@@ -24,6 +24,8 @@ import Cars from "../Page/Cars/Cars";
 import MotorBikes from "../Page/MotorBikes/MotorBikes";
 import CarsParts from "../Page/CarsParts/CarsParts";
 import MotorBikesParts from "../Page/MotorBikesParts/MotorBikesParts";
+import Order from "../Page/Order/Order";
+import Login from "../Page/Login/Login";
 const router = createBrowserRouter([
     {
         path: "/",
@@ -122,6 +124,16 @@ const router = createBrowserRouter([
             {
                 path: "/motorbikesParts",
                 element: <MotorBikesParts></MotorBikesParts>
+            },
+            {
+                path: "/order",
+                element: <Order></Order>,
+
+            },
+            {
+                path: "/login",
+                element: <Login></Login>
+
             },
         ]
     },

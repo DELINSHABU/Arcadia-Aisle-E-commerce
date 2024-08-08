@@ -139,7 +139,11 @@ function Navbar() {
                 </div>
               </div>
             </Link>
+<<<<<<< HEAD
             <Link className="px-1 text-xl bg-white rounded text-black hover:text-white hover:bg-black border-none flex justify-center items-center gap-1 ml-2"><MdLogin />Login</Link>
+=======
+            <Link to="/login" className="px-1 text-xl font-serif bg-white rounded text-black hover:text-white hover:bg-black border-none flex justify-center items-center gap-1 ml-2"><MdLogin />Login</Link>
+>>>>>>> 5f7a482953abc7f3cb405c1df239efb6b834ce1f
           </div>
         </div>
       </div>
