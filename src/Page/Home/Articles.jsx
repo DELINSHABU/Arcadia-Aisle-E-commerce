@@ -12,19 +12,19 @@ function Articles() {
             .then(data => setCards(data))
     }, [])
     return (
-        <div className="bg-white">
-            <Title name={"Our Articles"}></Title>
-            <div className="container mx-auto px-4 py-10">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="primary-color">
+        <h1 className="EventsH1">Events on Bloom</h1>
+            <div className="container mx-auto px-0 py-10">
+                <div className="containerFlex">
                     {cards.map((item, index) =>
-                        <div key={index} className="max-w-sm rounded overflow-hidden bg-white shadow-xl pb-5">
+                        <div key={index} className=" cardFlex rounded overflow-hidden bg-white shadow-xl pb-5">
                             <div className="relative h-48">
                                 <img className="w-full h-48 object-cover " src={item?.image} alt={item?.title} />
                                 <div className=" absolute  bottom-0 left-0 w-full">
                                     <div className="flex justify-around items-center   bg-slate-900/60 w-full text-white py-1">
                                         <div className="flex justify-center items-center gap-2">
                                             <img className="w-8 h-8 rounded-full" src="https://i.ibb.co/L9vJkVq/camera.jpg" alt="" />
-                                            <p >Mr. Habib</p>
+                                            <p >Mr. Issac George</p>
                                         </div>
                                         <div className="flex justify-center items-end gap-4">
                                             <MdMessage className='text-2xl text-orange-500' />
@@ -40,7 +40,7 @@ function Articles() {
                                     {item?.description}
                                 </p>
                             </div>
-                            <p className="text-blue-500 text-center ">Continue Reading</p>
+                            <p className="text-blue-500 text-center ">Comming Soon</p>
 
                         </div>)}
                 </div>

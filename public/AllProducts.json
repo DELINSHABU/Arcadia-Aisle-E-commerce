@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "mint lime",
+    "name": "Chocolate Shake",
     "description": "Latest iPhone model with A15 Bionic chip",
     "price": 117000,
     "currency": "TK",
@@ -11,7 +11,7 @@
     "stock": 25,
     "badge": "New",
     "imageUrl": [
-      "/final/image(11).jpg",
+      "https://i.ibb.co/9Y46xZw/image-1.png",
       "https://i.ibb.co/WGsNCfr/apple141.jpg",
       "https://i.ibb.co/pQ0h0JN/download-13.jpg",
       "https://i.ibb.co/H45QF6R/download-14.jpg"
@@ -19,7 +19,7 @@
   },
   {
     "id": 2,
-    "name": "Men's Premium Varsity Jacket",
+    "name": "Oreo Shake",
     "offer_price": 39.99,
     "description": "Men's Premium Varsity Jacket Men's Premium Varsity Jacket",
     "price": 105000,
@@ -30,7 +30,7 @@
     "stock": 30,
     "badge": "Best Seller",
     "imageUrl": [
-      "https://i.ibb.co/sbQJzcQ/versity-jacket-300x300.jpg",
+      "https://i.ibb.co/4JZFtjj/image-3.png",
       "https://i.ibb.co/LnhW0nN/je.jpg",
       "https://i.ibb.co/vv96NxM/download-15.jpg",
       "https://i.ibb.co/TRdm8cQ/download-16.jpg"
@@ -48,7 +48,7 @@
     "stock": 20,
     "badge": "Limited Stock",
     "imageUrl": [
-      "https://i.ibb.co/rHDPCSB/download-17.jpg",
+      "https://i.ibb.co/zXnv3pg/image-4.png",
       "https://i.ibb.co/g9yDfLc/one.jpg",
       "https://i.ibb.co/vc7w1xc/download-18.jpg"
     ]
@@ -65,7 +65,7 @@
     "stock": 15,
     "badge": "New",
     "imageUrl": [
-      "https://i.ibb.co/HKNV74n/pixel.jpg",
+      "https://i.ibb.co/DwHNf75/image-5.png",
       "https://i.ibb.co/48Dy7BM/download-20.jpg",
       "https://i.ibb.co/DGj58xj/images-11.jpg"
     ]
@@ -82,7 +82,7 @@
     "stock": 50,
     "badge": "Best Value",
     "imageUrl": [
-      "https://i.ibb.co/0DkCTp3/image.png",
+      "https://i.ibb.co/687RDSH/image-6.png",
       "https://i.ibb.co/yqKgP5h/image.png",
       "https://i.ibb.co/0h65L03/image.png"
     ]

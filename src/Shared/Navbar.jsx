@@ -111,16 +111,18 @@ function Navbar() {
                 </ul>
               </div>
             </div>
-            <Link className="navbarlogo">
-            <img src={bloomImage} alt="Bloom Garden Cafe" />
-            </Link>
+            
           </div>
           {/* Search bar */}
           <label className="md:mx-1">
             {/* <input type="text" className="px-2 py-1 rounded-xl md:w-60  w-24 text-black ml-1 md:ml-8 lg:ml-0" placeholder="Search" /> */}
           </label>
           {/* lg menu */}
+          <Link className="navbarlogo">
+            <img src={bloomImage} alt="Bloom Garden Cafe" />
+            </Link>
           <div className="navbar-center hidden lg:flex">
+            
             <ul className="menu menu-horizontal px-1">
               {navList}
             </ul>
@@ -139,11 +141,9 @@ function Navbar() {
                 </div>
               </div>
             </Link>
-<<<<<<< HEAD
-            <Link className="px-1 text-xl bg-white rounded text-black hover:text-white hover:bg-black border-none flex justify-center items-center gap-1 ml-2"><MdLogin />Login</Link>
-=======
-            <Link to="/login" className="px-1 text-xl font-serif bg-white rounded text-black hover:text-white hover:bg-black border-none flex justify-center items-center gap-1 ml-2"><MdLogin />Login</Link>
->>>>>>> 5f7a482953abc7f3cb405c1df239efb6b834ce1f
+            {/* <Link className="px-1 text-xl bg-white rounded text-black hover:text-white hover:bg-black border-none flex justify-center items-center gap-1 ml-2"><MdLogin />Login</Link> */}
+
+            {/* <Link to="/login" className="px-1 text-xl font-serif bg-white rounded text-black hover:text-white hover:bg-black border-none flex justify-center items-center gap-1 ml-2"><MdLogin />Login</Link> */}
           </div>
         </div>
       </div>

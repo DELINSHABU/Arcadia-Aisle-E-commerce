@@ -1,0 +1,10 @@
+:root {
+    --primary-color: #0A6847;
+    --secondary-color: #FFF35E;
+  }
+  .Cards{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

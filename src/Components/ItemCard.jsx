@@ -42,10 +42,10 @@ function ItemCard({ item, idx }) {
                 <Link to={`/viewDetails/${item?.id}`} className="buy-now-button relative text-center bg-orange-500 text-white py-2 mx-4 text-lg rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:ring-opacity-75">
 
 
-                    <span className="buy-now-text">BUY NOW</span>
-                    <i className="fas fa-shopping-cart cart-icon">
+                    <span className="buy-now-text">Add to Cart</span>
+                    <button className="fas fa-shopping-cart cart-icon">
                         <MdShoppingCartCheckout className='text-2xl' />
-                    </i>
+                    </button>
 
 
                 </Link>

@@ -20,5 +20,7 @@ body{
 
 }
 .navbarlogo img{
-    height: 50%;
+    opacity: 1000%;
+    height: 4vh;
+    margin: 1vh;
 }

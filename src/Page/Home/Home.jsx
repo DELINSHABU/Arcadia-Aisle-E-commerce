@@ -15,9 +15,9 @@ function Home() {
       <PopularCategories></PopularCategories>
       <Articles></Articles>
       <ShoppingEvent></ShoppingEvent>
-      <FAQSection></FAQSection>
-      <TopBrands></TopBrands>
-      <Services></Services>
+      {/* <FAQSection></FAQSection> */}
+      {/* <TopBrands></TopBrands> */}
+      {/* <Services></Services> */}
     </div>
   )
 }

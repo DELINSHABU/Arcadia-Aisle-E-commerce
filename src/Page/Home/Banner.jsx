@@ -28,7 +28,7 @@ function Banner() {
                     spaceBetween={30}
                     loop={true}
                     autoplay={{
-                        delay: 100000,
+                        delay: 1500,
                         disableOnInteraction: false,
                     }}
                     pagination={{

@@ -19,8 +19,8 @@ function PopularItems() {
     return (
         <div className='popularItemsDiv'>
             <div className='container mx-auto '>
-            {/* <Title className="title" style={{ color: 'red'}}  name={"Popular Orders"}></Title> */}
-            <h1> Popular Orders</h1>
+            <Title className="title" style={{ color: 'red'}}  name={"Popular Orders"}></Title>
+            {/* <h1> Popular Orders</h1> */}
 
                 <div className='relative grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mx-2  py-10'>
                     {
